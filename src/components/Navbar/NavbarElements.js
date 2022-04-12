@@ -4,6 +4,7 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   background: #52b788;
+  background: ${({ pageLive }) => (pageLive ? "#52b788" : "trasnparent")};
   height: 80px;
   display: flex;
   justify-content: center;

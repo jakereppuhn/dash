@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import {
@@ -35,7 +35,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <Link to="/expenses" className="link">
-                Expenses
+                Expense
               </Link>
             </NavItem>
             <NavItem>
@@ -45,8 +45,8 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/#">Login</NavBtnLink>
-            <NavBtnLink to="/#">Sign Up</NavBtnLink>
+            <NavBtnLink to="/login">Login</NavBtnLink>
+            <NavBtnLink to="/signup">Sign Up</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

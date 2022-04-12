@@ -24,3 +24,11 @@ export const IncomeMain = styled.div`
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   border-radius: 5px;
 `;
+
+export const IncomeHeader = styled.div`
+  height: 60px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  color: #52b788;
+`;

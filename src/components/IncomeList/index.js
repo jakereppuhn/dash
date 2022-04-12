@@ -3,12 +3,12 @@ import IncomeItem from "../IncomeItem";
 
 function IncomeList({ income, setIncome, editIncome }) {
   const removeIncome = (i) => {
-    let temp = income.filter((v, index) => index != i);
+    let temp = income.filter((v, index) => index !== i);
     setIncome(temp);
   };
 
   const updateIncome = (i) => {
-    let temp = income.filter((v, index) => index != i);
+    let temp = income.filter((v, index) => index !== i);
     editIncome(temp);
   };
 

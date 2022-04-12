@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Sidebar from "../../components/Sidebar";
 import Navbar from "../../components/Navbar";
-import Header from "../../components/Header";
 import IncomeForm from "../../components/IncomeForm";
 import IncomeList from "../../components/IncomeList";
-import { IncomeContainer, IncomeNav, IncomeMain } from "./IncomePageElements";
+import {
+  IncomeContainer,
+  IncomeNav,
+  IncomeMain,
+  IncomeHeader,
+} from "./IncomePageElements";
 
 const IncomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +34,7 @@ const IncomePage = () => {
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar />
       </IncomeNav>
-      <Header totalIncome={totalIncome} />
+      <IncomeHeader>Income</IncomeHeader>
       <IncomeMain>
         <IncomeForm income={income} setIncome={setIncome} />
         <IncomeList income={income} setIncome={setIncome} />

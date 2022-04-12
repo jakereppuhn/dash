@@ -1,18 +1,27 @@
 import React, { useRef, useEffect } from "react";
 
-function IncomeForm({ income, setIncome, editIncome }) {
+function ExpenseForm({ expense, setExpense, editExpense }) {
   const desc = useRef(null);
   const date = useRef(null);
   const price = useRef(null);
 
-  const AddIncome = (e) => {
+  const AddExpense = (e) => {
     e.preventDefault();
 
     let d = date.current.value.split("-");
     let newD = new Date(d[0], d[1] - 1, d[2]);
 
-    setIncome([
-      ...income,
+    setExpense([
+      ...expense,
+      {
+        desc: desc.current.value,
+        price: price.current.value,
+        date: newD.getTime(),
+      },
+    ]);
+
+    editExpense([
+      ...expense,
       {
         desc: desc.current.value,
         price: price.current.value,
@@ -26,7 +35,7 @@ function IncomeForm({ income, setIncome, editIncome }) {
   };
 
   return (
-    <form className="income-form" onSubmit={AddIncome}>
+    <form className="expense-form" onSubmit={AddExpense}>
       <div className="form-inner">
         <div className="bar">
           <input
@@ -64,4 +73,4 @@ function IncomeForm({ income, setIncome, editIncome }) {
   );
 }
 
-export default IncomeForm;
+export default ExpenseForm;
