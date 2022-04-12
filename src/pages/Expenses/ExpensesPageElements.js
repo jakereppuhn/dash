@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const DashContainer = styled.div`
+export const ExpenseContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -8,11 +8,11 @@ export const DashContainer = styled.div`
   height: 900px;
 `;
 
-export const DashNav = styled.div`
+export const ExpenseNav = styled.div`
   width: 100%;
 `;
 
-export const DashMain = styled.div`
+export const ExpenseMain = styled.div`
   background-color: #fff;
   height: 740px;
   width: 1780px;
@@ -25,7 +25,7 @@ export const DashMain = styled.div`
   border-radius: 5px;
 `;
 
-export const DashHeader = styled.div`
+export const ExpenseHeader = styled.div`
   height: 60px;
   font-size: 30px;
   display: flex;
