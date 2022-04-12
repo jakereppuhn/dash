@@ -6,11 +6,11 @@ function Header({ totalIncome }) {
       <div className="i-header-container">
         <div className="header-mtd">
           <h1>Income MTD:</h1>
-          <h2 className="total-income">${totalIncome}</h2>
+          <h2 className="total-income">${totalIncome.toFixed(2)}</h2>
         </div>
         <div className="header-ytd">
           <h1>Income YTD:</h1>
-          <h2 className="total-income">${totalIncome}</h2>
+          <h2 className="total-income">${totalIncome.toFixed(2)}</h2>
         </div>
       </div>
     </header>

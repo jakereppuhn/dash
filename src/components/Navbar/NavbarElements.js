@@ -32,7 +32,7 @@ export const NavLogo = styled(LinkR)`
   color: #fff;
   justify-self: felx-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
@@ -61,7 +61,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
+  margin-right: 22px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -70,6 +70,15 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  &:visited {
+    color: #fff;
+  }
 `;
 
 export const NavLinks = styled(LinkS)`

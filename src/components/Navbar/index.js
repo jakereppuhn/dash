@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import {
   Nav,
   NavbarContainer,
@@ -23,16 +24,24 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="/">Dashboard</NavLinks>
+              <Link to="/" className="link">
+                Dashboard
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLinks to="/income">Income</NavLinks>
+              <Link to="/income" className="link">
+                Income
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLinks to="expenses">Expenses</NavLinks>
+              <Link to="/expenses" className="link">
+                Expenses
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLinks to="networth">Networth</NavLinks>
+              <Link to="/networth" className="link">
+                Networth
+              </Link>
             </NavItem>
           </NavMenu>
           <NavBtn>
