@@ -30,5 +30,5 @@ export const IncomeHeader = styled.div`
   font-size: 30px;
   display: flex;
   align-items: center;
-  color: #52b788;
+  color: #252422;
 `;

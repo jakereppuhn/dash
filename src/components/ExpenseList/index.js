@@ -3,12 +3,12 @@ import ExpenseItem from "../ExpenseItem";
 
 function ExpenseList({ expense, setExpense, editExpense }) {
   const removeExpense = (i) => {
-    let temp = expense.filter((v, index) => index != i);
+    let temp = expense.filter((v, index) => index !== i);
     setExpense(temp);
   };
 
   const updateExpense = (i) => {
-    let temp = expense.filter((v, index) => index != i);
+    let temp = expense.filter((v, index) => index !== i);
     editExpense(temp);
   };
 

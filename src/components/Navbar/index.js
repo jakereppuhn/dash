@@ -8,7 +8,6 @@ import {
   MobileIcon,
   NavMenu,
   NavItem,
-  NavLinks,
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
@@ -18,7 +17,7 @@ const Navbar = ({ toggle }) => {
     <div>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">Dash</NavLogo>
+          <NavLogo to="/home">Dash</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>

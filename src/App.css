@@ -8,12 +8,6 @@
   font-weight: 600;
 }
 
-h1 {
-  font-size: 30px;
-  color: #52b788;
-  margin-right: 5px;
-}
-
 .income-item {
   display: flex;
   flex-direction: row;
@@ -59,14 +53,14 @@ form {
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   border-radius: 5px;
   margin-top: 50px;
-  background-color: #52b788;
+  background-color: #252422;
 }
 
 input {
   height: 30px;
   text-align: center;
   border: none;
-  background-color: #52b788;
+  background-color: #252422;
   color: #fff;
   outline: none;
   border-radius: 5px;
@@ -74,19 +68,21 @@ input {
 
 .add-btn {
   border: none;
-  background-color: #fff;
-  color: #52b788;
+  background-color: #252422;
+  color: #fff;
   font-size: 1rem;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 5px;
+  border: 2px solid #fff;
 }
 
 .add-btn:hover {
   transition: all 0.2s ease-in-out;
-  background: #40916c;
-  color: #fff;
+  background: #fff;
+  color: #252422;
   cursor: pointer;
+  border: none;
 }
 
 .income-list {
@@ -118,7 +114,7 @@ input {
 
 .remove-item {
   border: none;
-  background-color: #52b788;
+  background-color: #252422;
   color: #fff;
   font-size: 1rem;
   padding-left: 20px;
@@ -133,12 +129,12 @@ input {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   background-color: #fff;
-  color: #52b788;
+  color: #252422;
 }
 
 .edit-item {
   border: none;
-  background-color: #52b788;
+  background-color: #252422;
   color: #fff;
   font-size: 1rem;
   padding-left: 20px;
@@ -153,7 +149,7 @@ input {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   background-color: #fff;
-  color: #52b788;
+  color: #252422;
 }
 
 .btn-group {
@@ -170,6 +166,7 @@ input {
 
 .link {
   text-decoration: none;
+  color: #66c61b;
 }
 
 .link:visited {
@@ -187,4 +184,26 @@ input {
 
 .signup-input::placeholder {
   color: #52b788;
+}
+
+.hero-btn {
+  border-radius: 5px;
+  background: #252422;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hero-btn:hover {
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+  border: none;
+  color: #252422;
 }

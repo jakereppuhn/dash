@@ -34,7 +34,7 @@ const ExpensePage = () => {
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar />
       </ExpenseNav>
-      <ExpenseHeader>Expense</ExpenseHeader>
+      <ExpenseHeader>Expense Tracker</ExpenseHeader>
       <ExpenseMain>
         <ExpenseForm expense={expense} setExpense={setExpense} />
         <ExpenseList expense={expense} setExpense={setExpense} />

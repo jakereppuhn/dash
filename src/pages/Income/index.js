@@ -34,7 +34,7 @@ const IncomePage = () => {
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar />
       </IncomeNav>
-      <IncomeHeader>Income</IncomeHeader>
+      <IncomeHeader>Income Tracker</IncomeHeader>
       <IncomeMain>
         <IncomeForm income={income} setIncome={setIncome} />
         <IncomeList income={income} setIncome={setIncome} />

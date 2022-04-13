@@ -19,16 +19,16 @@ const Sidebar = ({ isOpen, toggle }) => {
         </Icon>
         <SidebarWrapper>
           <SidebarMenu>
-            <SidebarLink to="home" onClick={toggle}>
+            <SidebarLink to="/" onClick={toggle}>
               Dashboard
             </SidebarLink>
-            <SidebarLink to="about" onClick={toggle}>
+            <SidebarLink to="/income" onClick={toggle}>
               Income
             </SidebarLink>
-            <SidebarLink to="work" onClick={toggle}>
-              Expenses
+            <SidebarLink to="/expense" onClick={toggle}>
+              Expense
             </SidebarLink>
-            <SidebarLink to="contact" onClick={toggle}>
+            <SidebarLink to="/networth" onClick={toggle}>
               Networth
             </SidebarLink>
           </SidebarMenu>
